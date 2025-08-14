@@ -1,0 +1,146 @@
+/* Reset and font */
+body, h1, h2, h3, h4, p, ul {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: #111; /* Deep black background */
+  color: #f5f5f5; /* Light text for contrast */
+  line-height: 1.8;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header */
+header {
+  background-color: #b30000; /* Darker red */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Georgia', serif; /* Elegant serif font */
+  font-size: 2.2rem;
+  letter-spacing: 2px; /* Spaced out letters */
+  text-transform: uppercase;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* Soft shadow for depth */
+  margin-bottom: 0.5rem;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 0.5rem;
+}
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f5f5f5; /* Softer white */
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+nav ul li a:hover {
+  color: #ff9999; /* Muted light red on hover */
+}
+
+/* Hero Section */
+.hero {
+  background: #1a1a1a; /* Dark grey-black */
+  text-align: center;
+  padding: 2rem;
+  border-bottom: 3px solid #8b0000;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ff4d4d;
+}
+
+.hero p {
+  color: #ccc;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.products article {
+  background: #1c1c1c;
+  border: 1px solid #8b0000;
+  padding: 1rem;
+  width: 250px;
+  box-shadow: 2px 2px 8px rgba(255, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.products article:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 15px rgba(255, 0, 0, 0.5);
+}
+
+.products img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+
+.products h3 {
+  color: #ff4d4d;
+}
+
+.products p {
+  color: #ccc;
+}
+
+/* Aside Section */
+aside {
+  background: #330000;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  border-left: 5px solid #8b0000;
+  color: #ffcccc;
+  border-radius: 5px;
+}
+
+/* Footer */
+footer {
+  background: #b30000; /* Matching darker red */
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  nav ul {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .products {
+    padding: 1rem;
+  }
+  .products article {
+    width: 100%;
+    max-width: 350px;
+  }
+}
